@@ -1,0 +1,37 @@
+<form>
+  <div>
+    <label for="artifact">Artifact</label>
+    <input
+      type="text"
+      id="artifact"
+      [(ngModel)]="artifact"
+      name="artifact"
+      style="margin-bottom: 20px; margin-left: 10px"
+    />
+  </div>
+
+  <div>
+    <label for="artifact">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      value="{{ artifact }}"
+      [(ngModel)]="name"
+      style="margin-bottom: 20px; margin-left: 10px"
+    />
+  </div>
+  <br />
+  <div>
+    <label for="artifact">Pakcage</label>
+    <input
+      type="text"
+      id="package"
+      name="package"
+      [(ngModel)]="package"
+      value="com.example.{{ artifact }}"
+      style="margin-bottom: 20px; margin-left: 10px"
+    />
+  </div>
+  <br />
+</form>
